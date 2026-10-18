@@ -1,0 +1,71 @@
+/* Layout base: hace que el footer quede al fondo sin cubrir contenido */
+html, body {
+    height: 100%;
+    margin: 0%;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 4%;
+    background-color: #fcfbf9;
+    color: #ce124a;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+h1, h2 {
+    color: #02080f;
+}
+
+header {
+    background-color: #f4c9d4;
+    color: #02080f;
+    padding: 20px;
+    text-align: center;
+    display: block;
+}
+
+nav {
+    background-color: #f4c9d4;
+    padding: 10px;
+}
+
+nav a {
+    color: #02080f;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+section {
+    background-color: #f4c9d4;
+    border-color: #ce124a;
+    border-style: solid;
+    padding: 5%;
+    border-radius: 2%;
+    margin-bottom: 2%;
+}
+
+/* main ocupa el espacio restante para empujar el footer al final */
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #ce124a;
+    color: #02080f;
+    text-align: center;
+    padding: 3%;
+    margin-top: 20px;
+    /* Expandir el footer más allá del padding del body (padding body = 20px) */
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    box-sizing: border-box;
+    align-self: stretch;
+}
+
+.imagen {
+    width: 1%;
+    height: 1%;
+}
